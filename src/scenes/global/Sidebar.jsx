@@ -29,7 +29,6 @@ const Item = ({ title, to, icon, selected, setSelected }) => {
             onClick={
                 () => {
                     setSelected(title);
-                    console.log(`Selected: ${title}`);
                 }
             }
             icon={icon}
