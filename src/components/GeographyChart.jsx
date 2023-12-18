@@ -3,7 +3,7 @@ import { useTheme } from '@mui/material';
 import { tokens } from '../theme';
 import { mockGeographyData as data } from '../data/mockData';
 import { geoFeatures } from '../data/mockGeoFeatures';
-const Geographychart = ({ isDashboard = false }) => {
+const Geographychart = ({ isDashBoard = false }) => {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
     return (
@@ -48,13 +48,13 @@ const Geographychart = ({ isDashboard = false }) => {
             unknownColor="#666666"
             label="properties.name"
             valueFormat=".2s"
-            projectionScale={isDashboard ? 40 : 150}
-            projectionTranslation={isDashboard ? [0.49, 0.6] : [0.5, 0.5]}
+            projectionScale={isDashBoard ? 40 : 150}
+            projectionTranslation={isDashBoard ? [0.49, 0.6] : [0.5, 0.5]}
             projectionRotation={[0, 0, 0]}
             borderWidth={1}
             borderColor="#ffffff"
 
-            legends={isDashboard ? undefined : [
+            legends={isDashBoard ? undefined : [
                 {
                     anchor: 'bottom-left',
                     direction: 'column',
